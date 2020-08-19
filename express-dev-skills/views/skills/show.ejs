@@ -8,5 +8,9 @@
 <body>
     <h1>Skill #<%= skillNum %></h1>
     <h3><%= skill.skill %></h3>
+    <form action="/skills/<%= skill.id %>?_method=DELETE"
+        class="delete-form" method="POST">
+        <button type="submit">X</button>
+      </form>
   </body>
 </html>
