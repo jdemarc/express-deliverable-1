@@ -5,15 +5,21 @@ const skills = [
     {id: 4, skill: 'Express'}
   ];
   
-  module.exports = {
+module.exports = {
     getAll,
-    getOne
-  };
+    getOne,
+    create
+};
   
-  function getAll() {
-    return skills;
-  }
+function create(skill) {
+    skill.id = Date.now() % 1000000;
+    skills.push(skill);
+}
 
-  function getOne(id) {
-      return skills.find(skill => skill.id === parseInt(id));
-  }
+function getAll() {
+    return skills;
+}
+
+function getOne(id) {
+    return skills.find(skill => skill.id === parseInt(id));
+}
