@@ -3,7 +3,7 @@ var router = express.Router();
 
 const Skill = require('../models/skill');
 
-app.get('/skills', function(req, res) {
+router.get('/', function(req, res) {
   res.render('skills/index', {
     skills: Skill.getAll()
   });
