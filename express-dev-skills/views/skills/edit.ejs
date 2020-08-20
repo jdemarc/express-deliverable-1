@@ -8,13 +8,18 @@
         <title>Express Skill</title>
     </head>
     <body>
+        <a href="/">Home</a> || <a href="/skills">Skill List</a>
         <h1>Edit Skill</h1>
 
+        <div class='flex-wrapper'>
         <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
-        <input type="text" name="skill" value="<%= skill.skill %>">
-        <button type="submit">Update Skill</button>
+            <input type="text" name="skill" value="<%= skill.skill %>">
+            <br>
+            <input type="text" name="description" value="<%= skill.description %>">
+            <br>
+            <button type="submit">Update Skill</button>
         </form>
+        </div>
 
-        <a href="/skills">Return</a>
     </body>
 </html>
