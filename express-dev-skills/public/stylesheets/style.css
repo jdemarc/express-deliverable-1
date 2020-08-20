@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #080808;
+  color: lightgray;
 }
 
 a {
@@ -26,4 +28,8 @@ a {
 
 li {
   list-style: none;
+}
+
+input[type="text"] {
+  margin: 3px;
 }

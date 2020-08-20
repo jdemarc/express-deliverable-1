@@ -9,7 +9,7 @@
     </head>
     <body>
         <a href="/">Home</a> || <a href="/skills">Skill List</a>
-        <h1>Edit Skill</h1>
+        <h1>Edit skill #<%=skill.id%></h1>
 
         <div class='flex-wrapper'>
         <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
